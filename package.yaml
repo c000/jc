@@ -2,13 +2,12 @@ name:                jc
 version:             0.1.0.0
 github:              "githubuser/jc"
 license:             BSD3
-author:              "Author name here"
+author:              "c000"
 maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+copyright:           "2018 c000"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -31,7 +30,7 @@ library:
   source-dirs: src
 
 executables:
-  jc-exe:
+  jc:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
