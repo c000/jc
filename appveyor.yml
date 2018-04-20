@@ -11,7 +11,9 @@ before_build:
 build_script:
   - stack --no-terminal --install-ghc --local-bin-path . install
 
+after_build:
+  - 7z a jc.zip jc.exe
+
 artifacts:
-  - path: jc.exe
+  - path: jc.zip
     name: Release
-    type: zip
