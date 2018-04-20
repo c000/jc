@@ -1,0 +1,17 @@
+environment:
+  stack_root: 'C:\stack'
+
+cache:
+  - '%LocalAppData%\Programs\stack -> stack.yaml'
+  - 'C:\stack -> stack.yaml'
+
+before_build:
+  - choco install haskell-stack
+
+build_script:
+  - stack --no-terminal --install-ghc --local-bin-path . install
+
+artifacts:
+  - path: jc.exe
+    name: Release
+    type: zip
